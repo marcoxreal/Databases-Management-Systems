@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox prefHeight="600.0" prefWidth="900.0" spacing="10.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.TransactionLabController">
+    <children>
+        <VBox spacing="15.0" prefWidth="250.0" style="-fx-background-color: #f0f0f0;">
+            <padding>
+                <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+            </padding>
+            <children>
+                <Label text="Demonstratii Izolare" style="-fx-font-weight: bold;" />
+                <Button maxWidth="Infinity" text="1.A Dirty Read" onAction="#handleDirtyRead" />
+                <Button maxWidth="Infinity" text="1.B Non-Repeatable Read" onAction="#handleNonRepeatableRead" />
+                <Button maxWidth="Infinity" text="1.C Phantom Read" onAction="#handlePhantomRead" />
+                <Button maxWidth="Infinity" text="1.D Lost Update" onAction="#handleLostUpdate" />
+
+                <Separator />
+
+                <Label text="Erori &amp; Performanta" style="-fx-font-weight: bold;" />
+                <Button maxWidth="Infinity" text="2. Deadlock Demo" onAction="#handleDeadlock" />
+                <Button maxWidth="Infinity" text="3. Batch Performance" onAction="#handleBatchPerformance" style="-fx-background-color: #d1e7dd;" />
+            </children>
+
+            <Separator />
+            <Label text="Administrare Date" style="-fx-font-weight: bold;" />
+            <Button maxWidth="Infinity" text="RESET BAZA DE DATE"
+                    onAction="#handleResetDatabase"
+                    style="-fx-background-color: #ffcccc; -fx-text-fill: #990000; -fx-font-weight: bold;" />
+            <Separator />
+        </VBox>
+
+        <VBox HBox.hgrow="ALWAYS" spacing="10.0">
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+            <children>
+                <Label text="Consola Output (Log-uri Tranzactii):" />
+                <TextArea fx:id="logArea" VBox.vgrow="ALWAYS" editable="false" style="-fx-font-family: 'Courier New'; -fx-font-size: 12px;" />
+            </children>
+        </VBox>
+    </children>
+</HBox>

@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Fri Apr 03 10:23:01 EEST 2026:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.15.2.0 - (1873585): instance a816c00e-019d-5239-525d-00000140f7e0 
+on database directory memory:C:\Users\Marc\IdeaProjects\teme-lab-marcoxreal\SGBDLab1\dirtyReadDB with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@5c3bd550 
+Loaded from file:/C:/Users/Marc/.gradle/caches/modules-2/files-2.1/org.apache.derby/derby/10.15.2.0/b64da6681994f33ba5783ffae55cdb44885b9e70/derby-10.15.2.0.jar
+java.vendor=Microsoft
+java.runtime.version=21.0.9+10-LTS
+user.dir=C:\Users\Marc\IdeaProjects\teme-lab-marcoxreal\SGBDLab1
+os.name=Windows 11
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
